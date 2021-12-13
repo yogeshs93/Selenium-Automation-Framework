@@ -3,6 +3,7 @@
 <suite name="Suite" data-provider-thread-count="2">
 	<listeners>
 		<listener class-name="com.listeners.ListenerClass" />
+		<listener class-name="com.listeners.MethodInterceptor"/>
 	</listeners>
 	<test thread-count="1" name="Test" parallel="methods">
 		<classes>

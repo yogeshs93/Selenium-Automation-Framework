@@ -2,20 +2,36 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="32804" started-at="2021-12-11T13:27:29Z" finished-at="2021-12-11T13:28:02Z">
+  <suite name="Suite" duration-ms="29599" started-at="2021-12-12T06:53:26Z" finished-at="2021-12-12T06:53:56Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="32804" started-at="2021-12-11T13:27:29Z" finished-at="2021-12-11T13:28:02Z">
+    <test name="Test" duration-ms="29599" started-at="2021-12-12T06:53:26Z" finished-at="2021-12-12T06:53:56Z">
       <class name="com.tests.OrangeHRMTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tests.OrangeHRMTests@6f7fd0e6]" name="setUp" is-config="true" duration-ms="18162" started-at="2021-12-11T13:27:29Z" finished-at="2021-12-11T13:27:47Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tests.OrangeHRMTests@6f7fd0e6]" name="setUp" is-config="true" duration-ms="14801" started-at="2021-12-12T06:53:26Z" finished-at="2021-12-12T06:53:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tests.OrangeHRMTests@6f7fd0e6]" name="setUp" is-config="true" duration-ms="18752" started-at="2021-12-11T13:27:29Z" finished-at="2021-12-11T13:27:48Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tests.OrangeHRMTests@6f7fd0e6]" name="setUp" is-config="true" duration-ms="14147" started-at="2021-12-12T06:53:26Z" finished-at="2021-12-12T06:53:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="loginLogoutTest(java.lang.String, java.lang.String)[pri:0, instance:com.tests.OrangeHRMTests@6f7fd0e6]" name="loginLogoutTest" duration-ms="13775" started-at="2021-12-11T13:27:47Z" data-provider="LoginTestDataProvider" finished-at="2021-12-11T13:28:01Z">
+        <test-method status="PASS" signature="loginLogoutTest(java.lang.String, java.lang.String)[pri:0, instance:com.tests.OrangeHRMTests@6f7fd0e6]" name="loginLogoutTest" duration-ms="8104" started-at="2021-12-12T06:53:41Z" data-provider="LoginTestDataProvider" finished-at="2021-12-12T06:53:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginLogoutTest -->
+        <test-method status="FAIL" signature="loginLogoutTest(java.lang.String, java.lang.String)[pri:0, instance:com.tests.OrangeHRMTests@6f7fd0e6]" name="loginLogoutTest" duration-ms="13000" started-at="2021-12-12T06:53:41Z" data-provider="LoginTestDataProvider" finished-at="2021-12-12T06:53:54Z">
           <params>
             <param index="0">
               <value>
@@ -61,8 +77,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'YOGESH-SHADAKSH', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\YOGESH~1.SHA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:52118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4c9474cbfc4dd02f4f0e13eac3860012
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\YOGESH~1.SHA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:52214}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: df3ba5282e273adabd89c81e711aed05
 *** Element info: {Using=id, value=welcome}
 at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -87,27 +103,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLogoutTest -->
-        <test-method status="PASS" signature="loginLogoutTest(java.lang.String, java.lang.String)[pri:0, instance:com.tests.OrangeHRMTests@6f7fd0e6]" name="loginLogoutTest" duration-ms="8018" started-at="2021-12-11T13:27:48Z" data-provider="LoginTestDataProvider" finished-at="2021-12-11T13:27:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginLogoutTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.OrangeHRMTests@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="857" started-at="2021-12-11T13:27:56Z" finished-at="2021-12-11T13:27:57Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.OrangeHRMTests@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="1025" started-at="2021-12-12T06:53:49Z" finished-at="2021-12-12T06:53:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.OrangeHRMTests@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="807" started-at="2021-12-11T13:28:01Z" finished-at="2021-12-11T13:28:02Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.OrangeHRMTests@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="1747" started-at="2021-12-12T06:53:54Z" finished-at="2021-12-12T06:53:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
