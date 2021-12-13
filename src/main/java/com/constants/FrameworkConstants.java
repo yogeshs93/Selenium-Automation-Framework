@@ -14,11 +14,13 @@ public final class FrameworkConstants {
 	private final static String CONFIGFILEPATH=RESOURCEPATH+"/config/config.properties";
 	private final static int  EXPLICITWAIT = 10;
 	private static final String JSONCONFIGFILEPATH = RESOURCEPATH + "/config/config.json";
-	private static final String EXTENTREPORTFOLDERPATH = RESOURCEPATH+"/extent-test-output/index.html";
+	private static final String EXCELPATH = RESOURCEPATH + "/excel/testdata.xlsx";
+	private static final String RUNMANAGERSHEET = "RUNMANAGER";
+	private static final String EXTENTREPORTFOLDERPATH = System.getProperty("user.dir")+"/extent-test-output/index.html";
 	private static String extentReportFilePath = "";
-	
-	
-	
+
+
+
 	public static String getExtentReportFilePath() throws Exception {
 		if(extentReportFilePath.isEmpty()) {
 			extentReportFilePath = createReportPath();
@@ -35,7 +37,12 @@ public final class FrameworkConstants {
 			return EXTENTREPORTFOLDERPATH+"/index.html";
 		}
 	}
-
+	public static String getExcelpath() {
+		return EXCELPATH;
+	}
+	public static String getRunmanagersheet() {
+		return RUNMANAGERSHEET;
+	}
 
 	public static int getExplicitwait() {
 		return EXPLICITWAIT;
